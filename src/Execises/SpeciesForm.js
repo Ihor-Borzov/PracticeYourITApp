@@ -1,13 +1,13 @@
-import React, { useState } from "react"
+import React, { useState} from "react"
 
 
 
 
-let lastNameFrom = () => {
+let LastNameFrom = () => {
 
 let [firstName, setFirstName] = useState("")
 let [lastName, setLastName] = useState("")
-let [list, setList] = useState([])
+let [list, setList] = useState([]) 
 
 
 let handleSubmit = (e) => {
@@ -38,4 +38,4 @@ return(
 )
 }
 
-export default lastNameFrom
+export default LastNameFrom
