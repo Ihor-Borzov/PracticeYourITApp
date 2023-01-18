@@ -15,6 +15,9 @@ let closeOrNotTheNavBar = () =>{
 <ul className={s.listOfTopics}>
 <li><Link to="/useMemoTest/"   onClick={closeOrNotTheNavBar}>  UseMemoTest </Link></li>
 <li><Link to="/SpeciesFrom/"  onClick={closeOrNotTheNavBar} >  SpeciesFrom </Link></li>
+<li><Link to="/Debounce/"  onClick={closeOrNotTheNavBar} >  useDebounce </Link></li>
+<li><Link to="/Animation/"  onClick={closeOrNotTheNavBar} >  Animation </Link></li>
+<li><Link to="/HOC/"  onClick={closeOrNotTheNavBar} >  HOC </Link></li>
 </ul>
 
 </>

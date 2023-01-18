@@ -50,6 +50,8 @@ grid-area:nav;
 border-right:3px solid rgba(0, 22, 22, 0.4);
 }
 
+.navBar{/* is not needed because we specified css for nav tag */}
+
 .noNavBar{
   display:none;
 }

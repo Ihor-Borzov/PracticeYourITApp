@@ -1,0 +1,63 @@
+.wrapper{
+    background-color: azure;
+}
+
+  
+  .but{
+    position:relative;
+    background-color: aqua;
+    color:blue;
+    left:0;
+    transition:2s;
+  }
+  
+  .buttona{
+    position:relative;
+    background-color: aqua;
+    color:blue;
+    left:200px;
+    transition:2s;
+  }
+
+
+
+
+  
+  .but2{
+    margin:10px;
+    position:relative;
+    background-color:crimson;
+    color:white;
+    transition:2s;
+  }
+  
+  .button_open{
+    margin-top:50px;
+    transform: rotate(360deg);
+  }
+
+
+
+  .lastNameForm{
+    border:2px solid blue;
+    transition: 3sec;
+    overflow:hidden;
+  }
+
+  .anotherDiv{
+    background-color:beige;
+   width:100px;
+    border:3px solid black;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    margin:10px auto
+    
+  }
+
+  .anotherDiv div{
+    border:2px solid red;
+    padding:5px;
+    margin:5px;
+  }

@@ -1,6 +1,10 @@
 import React, { useState} from "react"
 
-
+let style = {
+    height:"200px",
+    backgroundColor: "grey",
+    paddingTop: "85px"
+}
 
 
 let LastNameFrom = () => {
@@ -24,7 +28,7 @@ let handleSubmit = (e) => {
 
 
 return(
-    <div>
+    <div style={style}>
     <form onSubmit={handleSubmit}>
 <input  placeholder="firstName" value={firstName} onChange={(e)=>{setFirstName((prev)=>{return(e.target.value)})}} />
 <input  placeholder="firstName" value={lastName} onChange={(e)=>{setLastName((prev)=>{return(e.target.value)})}} />
