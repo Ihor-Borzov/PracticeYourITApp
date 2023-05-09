@@ -6,13 +6,17 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux'
 import store from './Redux/Redux-store.js';
+import { ThemeProvider } from '@emotion/react';
+import {theme} from "./Execises/MaterialUI/theme"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
 <Provider store={store}>
-    <App />
+  <ThemeProvider theme={theme}>
+  <App />
+  </ThemeProvider>
     </Provider>
     </BrowserRouter>
   </React.StrictMode>

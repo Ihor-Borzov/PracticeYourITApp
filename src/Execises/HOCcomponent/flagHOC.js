@@ -12,8 +12,8 @@ flag : state.baseReducer.flag,
 
 export const flagHoc = (Component) => {
 
-const hocComponent = (props) => {
-
+const HocComponent = (props) => {
+//console.log(props)  // we will get "data" and "flag", but we will not get isAuth
 
     return(
         <div>
@@ -27,7 +27,7 @@ const hocComponent = (props) => {
 
 
 
-let connectHocComponent = connect(mapStateToProps)(hocComponent)
+let connectHocComponent = connect(mapStateToProps)(HocComponent)
 
 return connectHocComponent
 

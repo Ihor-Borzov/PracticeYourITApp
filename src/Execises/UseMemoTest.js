@@ -19,7 +19,7 @@ const constCompute = (num)=>{
   //Slow way - this function will be called with each rerender and will take a lot of time to compute the variable
   //const computed = constCompute(number) 
   
-    const computed = useMemo(() => {return constCompute(number)},[number])  // now this function will be called only when dependency number changes
+   const computed = useMemo(() => {return constCompute(number)},[number])  // now this function will be called only when dependency number changes
      
       return (
   <div>

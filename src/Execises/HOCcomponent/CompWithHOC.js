@@ -2,9 +2,10 @@ import React from "react"
 import { flagHoc } from "./flagHOC"
 import Paper from '@mui/material/Paper';
 import CompWithoutHOC from "./CompWithoutHoc";
+import { connect } from "react-redux";
 
 
-const Component1 = () => {
+const Component1 = (props) => {
 
 return (
     <div style={{padding:"50px"}}>
@@ -27,4 +28,15 @@ return (
 
 }
 
-export default flagHoc(Component1)
+
+
+
+let mapDispatchToProps = (state) => {
+    return{
+        isAuth : state.baseReducer.isAuth
+    }
+}
+
+
+
+export default flagHoc(connect(mapDispatchToProps)(Component1))

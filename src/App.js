@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import UseMemoTest from './Execises/UseMemoTest';
 import { Route, Routes } from 'react-router-dom';
@@ -10,9 +9,12 @@ import { useEffect, useState } from 'react';
 import Debounce from './Execises/UseDebounce';
 import { connect } from 'react-redux';
 import Animation from './Execises/React_animation/Animation';
-import { AnimatePresence, motion } from 'framer-motion';
 import {setFlagAC} from "./Redux/baseReducer"
 import CompWithHOC from './Execises/HOCcomponent/CompWithHOC';
+import FetchPractice from './Execises/FetchPractice';
+import ModalWindow from './Execises/ModalWindow/ModalWindow';
+import ABody from './Execises/MaterialUI/ABody';
+import FormikApp from './Execises/FormikPractice/FormikApp';
 
 
 function App(props) {
@@ -60,7 +62,11 @@ function App(props) {
                 <Route path="/SpeciesFrom/" element={<SpeciesFrom />} />
                 <Route path="/Debounce/" element={<Debounce />} />
                 <Route path="/Animation/" element={<Animation />} />
-                <Route path="/HOC/" element={<CompWithHOC />} />
+                <Route path="/HOC/" element={<CompWithHOC data={1}/>} />
+                <Route path="/FetchPractice/" element={<FetchPractice />} />
+                <Route path="/ModalWindow/" element={<ModalWindow />} />
+                <Route path="/MaterialUI/" element={<ABody/>}/>
+                <Route path="/Formik/" element={<FormikApp/>}/>
                 <Route path="/" element={<HomePage />} />                                    {/* if the url is a base. */}
               </Routes>
             </main>
